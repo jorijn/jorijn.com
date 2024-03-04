@@ -1,0 +1,34 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Jorijn Schrijvershof"
+theme = "rocinante"
+paginate = 3
+
+[markup]
+  [markup.highlight]
+    style = "monokailight"
+  [markup.goldmark.renderer]
+    unsafe= true
+
+[params]
+  mainSections = ["posts", "photos"]
+  email = "jorijn@jorijn.com"
+  favicon = "icons/favicon.png"
+  about = """
+<p>Hey. I'm <strong>Jorijn Schrijvershof</strong>, a dedicated 34-year-old DevOps Engineer from Brabant, The Netherlands. My journey in the tech realm initiated in the early 2000s, a path that has led me to acquire a profound expertise in software engineering, architecture, and infrastructure optimization.</p>
+<p>You can find me on <a rel="me" href="https://toot.community/@jorijn">Mastodon</a> and <a href="https://github.com/Jorijn">GitHub</a>. Outside tech, I enjoy running and Krav Maga to stay active.</p>
+"""
+
+  [[params.links]]
+    [[params.links.link]]
+      name = "About"
+      href = "/about/"
+    [[params.links.link]]
+      name = "Services"
+      href = "/services/"
+    [[params.links.link]]
+      name = "Projects & References"
+      href = "/projects-and-references/"
+    [[params.links.link]]
+      name = "Contact"
+      href = "/contact/"
