@@ -5,7 +5,6 @@
     {
       "fileMatch": ["\\.github/workflows/.*\\.yml$"],
       "matchStrings": ["HUGO_VERSION: (?<currentValue>\\d+\\.\\d+\\.\\d+)"],
-      "datasource": "github-releases",
       "depNameTemplate": "gohugoio/hugo",
       "datasourceTemplate": "github-releases"
     }
