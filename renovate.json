@@ -1,10 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices"],
-  "regexManagers": [
+  "extends": [
+    "config:best-practices"
+  ],
+  "customManagers": [
     {
-      "fileMatch": ["\\.github/workflows/.*\\.yml$"],
-      "matchStrings": ["HUGO_VERSION: (?<currentValue>\\d+\\.\\d+\\.\\d+)"],
+      "customType": "regex",
+      "fileMatch": [
+        "\\.github/workflows/.*\\.yml$"
+      ],
+      "matchStrings": [
+        "HUGO_VERSION: (?<currentValue>\\d+\\.\\d+\\.\\d+)"
+      ],
       "depNameTemplate": "gohugoio/hugo",
       "datasourceTemplate": "github-releases"
     }
