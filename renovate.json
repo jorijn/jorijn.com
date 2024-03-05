@@ -7,7 +7,7 @@
       "matchStrings": ["HUGO_VERSION: (?<currentValue>\\d+\\.\\d+\\.\\d+)"],
       "datasource": "github-releases",
       "depNameTemplate": "gohugoio/hugo",
-      "versioning": "semver"
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
